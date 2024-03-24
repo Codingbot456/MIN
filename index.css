@@ -1,0 +1,922 @@
+
+@font-face {
+    font-family: myfont1;
+    src: url(ChalkDrawings-Regular.ttf);
+}
+
+
+:root{
+    --global:black;
+    --heading:red;
+    --text:white;
+    --sub-heading:whitesmoke;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.body{
+    height: auto;
+    padding: 20%;
+    background-color: var(--global);
+    overflow-x: hidden;
+    
+    
+
+}
+
+h1{
+    font-size: 5em;
+color:red;
+font-family: myfont1;
+letter-spacing: 2px;
+}
+h1::first-letter{
+    font-size: 1.5em;
+}
+h1::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: var(--heading);
+    margin: 20px auto;
+    text-align: ;
+}
+h2{
+color: var(--sub-heading);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 1.6em;
+}
+p1{
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 2px;
+}
+p10{
+    width: 80%;
+    height: 2px;
+  background-color: red;
+  text-align: center;
+}
+h2{
+    font-weight: bold;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(main-2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+
+
+}
+#hero1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(about-page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+}
+#hero2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(studio-page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+}
+#hero3{
+    width: 100%;
+    height: 100vh;
+    background-image: url(artworks-page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+}
+#hero5{
+    width: 100%;
+    height: 100vh;
+    background-image: url(contact-page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+
+}
+.logo{
+    color: var(--text);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   
+}
+
+
+.logo >strong{
+    
+    font-size: 8em;
+    font-family: myfont1;
+    background-image: url(font-image.jpeg);
+    background-color: transparent;
+    background-clip: text;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+    background-color: white;
+
+}
+
+
+
+.nav ul{
+ display: flex;
+ align-items: center;
+ justify-content:space-between;
+ list-style: none;
+ text-decoration: none;
+ gap: 20px;
+
+}
+.nav ul li{
+    text-decoration: none;
+}
+.links{
+    text-decoration: none;
+    font-size: 1.9em;
+    letter-spacing: 2px;
+    color: var(--text);
+    font-family: myfont1;
+text-shadow: 2px 2px 2px black;
+    
+}
+
+.links:hover{
+    letter-spacing: 3.5px;
+    background-color: transparent;
+    background-clip: text;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: wheat;
+    background-color:red;
+    transition: .3s;
+    
+}
+.links:active{
+    color: red;
+}
+.toggle-nav{
+    background-color: black;
+    font-size: 1.6em;
+    min-width: 100%;
+}
+.hero-info{
+  margin-top: 10%;  
+  min-width: 100%;
+
+ display: grid;
+ place-content: center;
+ padding: 30px;
+
+}
+.info1{
+    width: inherit;
+    text-align: center;
+    padding: 10px;
+    gap: 5px;
+}
+.info1 p1{
+    text-align: left;
+    color: white;
+    font-size: 1.6em;
+}
+
+
+
+.recents{
+    width: inherit;
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:20px;
+
+
+}
+.recent{
+    width: inherit;
+    text-align:left;
+    padding-top:5%;
+    display:grid;
+    padding:20px;
+    gap:20px;
+
+}
+.recent h1{
+    word-spacing: 20px;
+}
+
+.recent h2{
+color: var(--global);
+}
+
+
+
+#one{
+    display:flex;
+
+   justify-content: center;
+   gap: 30px;
+}
+#one img{
+    height: 400px;
+    width:200px;
+    border-radius: 10px;
+     transition: .5s;
+   
+}
+#one img:hover{
+    height: 450px;
+    width: 250px;
+    transition: .5s;
+}
+
+.st{
+    margin-top: 30px;
+}
+
+
+
+.biography{
+    width: inherit;
+    display: grid;
+    place-content: center;
+    background-image: url(exhi-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:40px;
+    
+    
+}
+.bio-info h1{
+color:white;
+text-align: left;
+}
+.bio-info p1{
+font-size:1.1em;
+text-align: left;
+}
+.bio-info p3{
+display: grid;
+place-content: center;
+min-width: 100%;
+font-size:1.5em;
+color:black;
+text-align: left;
+}
+
+
+.bio-info{
+    display: grid;
+    place-items: center;
+    color:white;
+    padding:20px;
+    gap: 20px;
+}
+.bio-info p3{
+    padding:20px;
+}
+
+
+.exhibitions{
+    width: 100%;
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:20px;
+}
+
+.exhi-info{
+   text-align: right;
+}
+
+.exhi-images{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    
+}
+
+
+.more{
+    width: 100%;
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:20px;
+    display: grid;
+    gap: 10px;
+    text-align: left;
+}
+.more>h2{
+    color: var(--global);
+}
+.about{
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    gap: 20px;
+   
+    
+}
+.footer{
+    border-top: 2px solid black;
+}
+.footer>p1>span{
+    color: var(--heading);
+    font-weight: bolder;
+    font-size: 1.8em;
+    align-items: center;
+}
+
+/* ABOUT */
+.bio{
+    min-width: 100%;
+    place-content: center;
+    display: grid;
+    place-content: center;
+    padding: 30px;
+    background-color: wheat;  
+ 
+}
+
+.bio1{
+    min-width: inherit;
+    display: grid;
+    place-content: left;
+    text-align: left;
+    padding: 40px;
+}
+.bio2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+gap: 20px;    
+}
+.sub-bio1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sub1,.sub2{
+    width: 400px;
+   display: grid;
+   grid-gap: 5px;
+   min-width: 100%;
+   padding: 20px;
+}
+
+.sub1>h2,.sub2>h2,.sub3>h2{
+    background-image: url(exhi-bg.jpg);
+    background-color: transparent;
+    background-clip: text;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+    background-color: white;
+}
+.sub-bio2{
+    text-align: center;
+}
+.sub3{
+    padding: 40px;
+}
+.sub3 p1{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.image-about {
+   height: 300px;
+   width: 100%;
+   object-fit: cover;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  background-image: url(about-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.emotions{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    padding: 30px;
+    float: right;
+    text-align: center;
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.emo2{
+    min-width: 100%;
+   padding: 30px;
+}
+.emo2  h2{
+    text-align: right;
+    color: blue;
+}
+.emo2 p1{
+    min-width: inherit;
+    color: black;
+    display: grid;
+    place-content: center;
+}
+
+
+/* studio */
+#studio{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    padding: 60px;
+    background-color: wheat;
+    color:black;
+    cursor: pointer;
+  gap: 20px;
+}
+.studio1{
+padding: 20px;
+width: 100%;
+text-align: center;
+}
+.studio1 p1{
+    min-width: 100%;
+    display: grid;
+    place-content: center;
+    text-align: right;
+}
+.studio1 h2{
+    color: var(--global);
+}
+
+   
+   
+
+.my-studio{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .3s;
+    gap: 10%;
+}
+.studio-images img:hover{
+    scale: 1.06;
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+}
+.studio-images:hover>:not(:hover){
+  filter: grayscale(100%) opacity(100%)
+    saturate(100%);
+    transition: .3s;
+}
+.studio2{
+    width: 400px;
+    display: grid;
+    padding: 20px;
+    margin-top: 20px;
+    gap: 20px;
+}
+.studio2 h2{
+    color: var(--global);
+}
+.ima{
+   padding: 20px;
+   filter: saturate(100%);
+   -webkit-mask-image: radial-gradient(circle at 50% 60%, black 50%, rgba(0, 0, 0, 0.6) 50%);
+   mask-image: radial-gradient(circle at 50% 60%, black 50%, rgba(0, 0, 0, 0.6) 50%);
+}   
+
+.studio-images{
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    padding: 20px;
+    gap: 10px;
+}
+
+.studio-images>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.horiz{
+    grid-column: span 2;
+}
+.vert{
+    grid-row: span 2;
+}
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+
+/* Artwork */
+.abs1{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    background-color: wheat;
+    color:black;
+    padding: 90px;
+
+    
+}
+#title{
+    color: white;
+   padding-bottom: 70px;
+    display: grid;
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 20px;
+}
+
+
+
+.abstract-items{
+    min-width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 300px;
+    padding: 20px;
+    gap: 10px;
+}
+.abstract-items>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 50%;
+    padding: 10px;
+}
+
+.write{
+    display: grid;
+    place-content: center;
+    text-align: center;
+   height: 50vh;
+    padding: 90px;
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 10px;
+
+}
+
+/*contacts*/
+.contacts{
+    display: grid;
+    padding: 30px;
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 20px;
+}
+.contacts h2{
+    color: var(--global);
+
+}
+.contacts div{
+    display: grid;
+    gap: 10px;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    gap: 30px;
+  
+}
+.form1{
+    color: var(--global);
+    display: grid;
+    place-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+.form1 h2{
+    color: var(--global);
+}
+.form1 >div{
+    display: grid;
+    gap: 5px;
+
+}
+.name{
+    display:grid;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.message{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background-color:red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    outline:3px  solid transparent;
+    background-image: url(meso-bg.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    padding:40px;
+    gap: 20px;
+    box-shadow: 2px 2px 2px rgb(160, 147, 147);
+}
+.full{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.name>input{
+border: none;
+box-shadow: 2px 2px 2px rgb(160, 147, 147);
+text-align: center;
+caret-color:red;
+caret-shape:underscore;
+outline: none;
+border-radius: 6px;
+padding: 10px;
+background-color: transparent;
+color: white;
+font-size: 2em;
+
+}
+.full>input{
+border: 2px white;
+box-shadow: 2px 2px 2px rgb(160, 147, 147);
+caret-color: black;
+caret-shape:underscore;
+caret-color:red;
+outline: red;
+border-radius: 6px;
+background-color: transparent;
+backdrop-filter: blur(10px);
+padding:10px;
+color: white;
+font-size: 2em;
+text-align: center;
+}
+#story{
+border: none;
+ color: whitesmoke;
+caret-color:red;
+box-shadow: 2px 2px 2px rgb(160, 147, 147);
+padding: 20px;
+text-align: left;
+caret-shape:underscore;
+outline: none;
+border-radius: 6px;
+background-color: transparent;
+font-size: 2em;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.name h3:after{
+    content: "*";
+    margin-left: 2px;
+    color: red;
+}
+
+.btn{
+    display: grid;
+    place-content: center;
+    
+}
+.btn button{
+    padding:  10px 30px 10px 30px;
+    color:white;
+    font-size: 1.2em;
+    border: none;
+    outline: 2px solid black;
+    box-shadow:  2px 2px 2px 2px red;
+border-radius: 6px;
+background-color: transparent;
+backdrop-filter: blur(10px);
+}
+.btn button:hover{
+    transition: .5s ease;
+    cursor: pointer;
+    color:white;
+    scale: 1.2;
+    background-color:red;
+}
+
+
+.stevo{
+    height: 2em;
+    display: none;
+ }
+ .toggle-nav{
+    
+    height: 400px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: -30px;
+    padding: 20px;
+    display: none;
+}
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    background-image: url(recent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:20px;
+    text-align: center;
+}
+@media only screen and (max-width:768px) {
+    /* For mobile phones: */
+
+    p1{
+        font-size: 1.4em;
+    }
+    p2{
+        font-size: 1.2em;
+    }
+    .stevo{
+        display: block;
+        color:white;
+        cursor: pointer;
+        background-color: red;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 20px;
+    }
+    .stevo:hover{
+        background-color: white;
+        color:red;
+    transition: .3s;  
+  }
+
+  .hero-info{
+    
+    display: grid;
+    grid-auto-flow: row;
+      
+  
+  }
+  
+ .nav ul{
+      display: none;
+    }
+
+    #one{
+        display:flex;
+       justify-content: center;
+       gap: 10px;
+    }
+
+    #one img{
+        height: 200px;
+        width:150px;
+        border-radius: 10px;
+         transition: .5s;
+       
+    }
+    #one img:hover{
+        height: 210px;
+        transition:.5s;
+    }
+
+    .toggle-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        height: 350px;
+        width: 400px;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        color: white;
+        border-radius: 10px;
+        outline: 2px solid black;
+        position: absolute;
+        z-index: 1000;
+        top: 50px;
+        left: -400px;
+        padding: 20px;
+        margin-top: 20px;
+        transition: .5 ease;
+    }
+    .toggle-nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+       
+    }
+    .exhi-images >#div1>img{
+        padding: 20px;
+        height: 300px;
+    }
+    .exhi-images >#div2>img{
+        padding: 20px;
+        height: 500px;
+
+    }
+    
+    
+  }
+
+
+  
